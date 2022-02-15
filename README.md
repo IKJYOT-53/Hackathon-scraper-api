@@ -2,6 +2,11 @@
 
 Scrapes upcoming Hackathon data from MLH,Devpost,Devfolio and Dare2Compete
 
+## Data 
+- Hackathon Name
+- Start End Time
+- Link to Hackathon registration/site
+
 ## Api End Points
 
 | End Point   | Info                                  |
