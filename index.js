@@ -3,7 +3,7 @@ const axios= require('axios')
 const cheerio= require('cheerio')
 const moment = require('moment')
 const app = express()
-const PORT = 8000
+const PORT = process.env.PORT ||8000
 
 const devfolio="https://api.devfolio.co/api/hackathons?filter=all&page=1&limit=20"
 const D2C="https://dare2compete.com/api/public/opportunity/search-new?opportunity=hackathons&sort=&dir=&filters=,All,Open,All&types=teamsize,payment,oppstatus,eligible&atype=explore&page=1&showOlderResultForSearch=false"
