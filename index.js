@@ -4,8 +4,11 @@ const cheerio= require('cheerio')
 const moment = require('moment')
 const { kill } = require('nodemon/lib/monitor/run')
 const app = express()
+const cors = require("cors")
 const PORT = process.env.PORT ||8000
-
+app.use(cors({
+    origin: "*",
+}))
 let devfolio="https://api.devfolio.co/api/hackathons?filter=all&page=1&limit=20"
 const D2C="https://dare2compete.com/api/public/opportunity/search-new?opportunity=hackathons&sort=&dir=&filters=,All,Open,All&types=teamsize,payment,oppstatus,eligible&atype=explore&page=1&showOlderResultForSearch=false"
 const MLH="https://mlh.io/seasons/2022/events"
